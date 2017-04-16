@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		54F2BA641EA3E456001B30C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F2BA631EA3E456001B30C5 /* AppDelegate.swift */; };
-		54F2BA661EA3E456001B30C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F2BA651EA3E456001B30C5 /* ViewController.swift */; };
 		54F2BA691EA3E456001B30C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F2BA671EA3E456001B30C5 /* Main.storyboard */; };
 		54F2BA6B1EA3E456001B30C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F2BA6A1EA3E456001B30C5 /* Assets.xcassets */; };
 		54F2BA6E1EA3E456001B30C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F2BA6C1EA3E456001B30C5 /* LaunchScreen.storyboard */; };
+		54F2BA761EA3E5B6001B30C5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F2BA751EA3E5B6001B30C5 /* TableViewController.swift */; };
+		54F2BA781EA3E5E2001B30C5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F2BA771EA3E5E2001B30C5 /* TableViewCell.swift */; };
+		54F2BA8A1EA40876001B30C5 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F2BA891EA40876001B30C5 /* detailViewController.swift */; };
+		54F2BA8D1EA4097F001B30C5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2BA8C1EA4097F001B30C5 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		54F2BA601EA3E456001B30C5 /* LondonLandmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LondonLandmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F2BA631EA3E456001B30C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		54F2BA651EA3E456001B30C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		54F2BA681EA3E456001B30C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54F2BA6A1EA3E456001B30C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54F2BA6D1EA3E456001B30C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54F2BA6F1EA3E456001B30C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54F2BA751EA3E5B6001B30C5 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		54F2BA771EA3E5E2001B30C5 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		54F2BA891EA40876001B30C5 /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
+		54F2BA8C1EA4097F001B30C5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F2BA8D1EA4097F001B30C5 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				54F2BA621EA3E456001B30C5 /* LondonLandmarks */,
 				54F2BA611EA3E456001B30C5 /* Products */,
+				54F2BA8B1EA4097F001B30C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +63,23 @@
 			isa = PBXGroup;
 			children = (
 				54F2BA631EA3E456001B30C5 /* AppDelegate.swift */,
-				54F2BA651EA3E456001B30C5 /* ViewController.swift */,
+				54F2BA771EA3E5E2001B30C5 /* TableViewCell.swift */,
+				54F2BA751EA3E5B6001B30C5 /* TableViewController.swift */,
 				54F2BA671EA3E456001B30C5 /* Main.storyboard */,
 				54F2BA6A1EA3E456001B30C5 /* Assets.xcassets */,
 				54F2BA6C1EA3E456001B30C5 /* LaunchScreen.storyboard */,
 				54F2BA6F1EA3E456001B30C5 /* Info.plist */,
+				54F2BA891EA40876001B30C5 /* detailViewController.swift */,
 			);
 			path = LondonLandmarks;
+			sourceTree = "<group>";
+		};
+		54F2BA8B1EA4097F001B30C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54F2BA8C1EA4097F001B30C5 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54F2BA661EA3E456001B30C5 /* ViewController.swift in Sources */,
+				54F2BA781EA3E5E2001B30C5 /* TableViewCell.swift in Sources */,
 				54F2BA641EA3E456001B30C5 /* AppDelegate.swift in Sources */,
+				54F2BA761EA3E5B6001B30C5 /* TableViewController.swift in Sources */,
+				54F2BA8A1EA40876001B30C5 /* detailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
